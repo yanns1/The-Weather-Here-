@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Weather Here</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+  </head>
+  <body>
+    <h1>The Weather Here</h1>
+    <a href="./pages/my-positions.html">Where was I ?</a>
+
+    <p>Latitude: <span id="current-lat"></span>°</p>
+    <p>Longitude: <span id="current-lng"></span>°</p>
+
+    <p>
+      The weather in <span id="timezone"></span> is
+      <span id="summary"></span> with a temperature of
+      <span id="temperature"></span>°C.
+    </p>
+
+    <p class="aq-para">
+      The concentration of particulate matter (<span id="parameter"></span>) in
+      this city is <span id="value"></span>. Last read on
+      <span id="last-update"></span>
+    </p>
+    <button class="submit">Submit</button>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

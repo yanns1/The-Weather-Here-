@@ -1,0 +1,20 @@
+:root {
+  --background: #eeeeee;
+}
+
+body {
+  height: 100vh;
+  background: var(--background);
+}
+
+.title {
+  text-align: center;
+}
+
+.home-link {
+  padding: 1em;
+}
+
+#map {
+  height: 70vh;
+}
