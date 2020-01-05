@@ -17,8 +17,9 @@ const Datastore = require('nedb');
 
 // Start a server
 const app = express();
-// Listen the port 8080
-app.listen(8080, () => console.log('listening'));
+// Listen the port provided by the host env, or 8080 if not defined
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`Start listening at ${port}`));
 // Serve all the static files in /public to the client
 app.use(express.static('public'));
 // Tell the server to parse incoming JSON requests

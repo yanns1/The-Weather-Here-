@@ -1,5 +1,3 @@
-// Submit les données aq à la db
-
 if ('geolocation' in navigator) {
     console.log('Geolocation available')
 
